@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <script src="main.js" lang="text/javascript"></script>
+</head>
+<body>
+    <script>
+        console.log(cars);
+        // .push adds to the end of array
+        cars.push('Hyundai');
+        console.log(cars);
+        // .unshift adds to the start of an array
+        cars.unshift('Jaguar');
+        console.log(cars);
+        // .pop removes the last in the array
+        cars.pop();
+        console.log(cars);
+        // responds true/false if the given value is Array or not
+        console.log(Array.isArray(cars));
+        // typeOf
+
+        // indexOf gives you the key of the value given
+        console.log(cars.indexOf('Suzuki'));
+
+        // using object literals
+        console.log(owner[0].firstName, owner.lastName);
+        console.log(owner[0].location);
+        console.log(owner[0].location.country);
+
+        const { firstName, lastName, hobbies, location: { country, city }} = owner[0];
+        console.log(firstName, lastName);
+        console.log(country, city);
+
+        // adding to the object literals
+        owner.transportation = 'Bicycle';
+        console.log(owner);
+
+
+    </script>
+</body>
+</html>
